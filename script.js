@@ -74,9 +74,12 @@ function resetTimer() {
     if(pomodoroModeBtn.classList.contains('active'))
         {
             setPomodoroTimer();
+            mainBnt.textContent = 'start';
+
         }
         else if(restModeBtn.classList.contains('active')){
             setRestTimer();
+            mainBnt.textContent = 'start';
         }
 }
 
